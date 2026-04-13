@@ -1,5 +1,12 @@
 # Social Messaging UI (Facebook2 Upgraded)
 
+<!-- BrandCloud:readme-standard -->
+[![Maintained](https://img.shields.io/badge/Maintained-yes-brightgreen.svg)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Showcase](https://img.shields.io/badge/Portfolio-Showcase-blue.svg)](#)
+
+_Part of the `sakib-maho` project showcase series with consistent documentation and quality standards._
+
 This repository now contains a social messaging interface clone built with vanilla web technologies.
 It includes searchable contacts, chat rendering, and data schema tests.
 
