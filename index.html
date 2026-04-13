@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Messaging UI</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <main class="container">
+    <section class="sidebar">
+      <h1>Chats</h1>
+      <input id="searchInput" type="search" placeholder="Search contact">
+      <ul id="contactList"></ul>
+    </section>
+    <section class="chat">
+      <h2 id="chatTitle">Select a contact</h2>
+      <div id="messageList" class="messages"></div>
+    </section>
+  </main>
+
+  <template id="contactTemplate">
+    <li class="contact-item"></li>
+  </template>
+
+  <template id="messageTemplate">
+    <div class="message"></div>
+  </template>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

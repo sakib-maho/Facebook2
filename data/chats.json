@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Ava",
+    "messages": [
+      "Can you review the API PR?",
+      "I added tests and updated the README."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Noah",
+    "messages": [
+      "Frontend cards are now responsive.",
+      "Need feedback on spacing and typography."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mina",
+    "messages": [
+      "CI is green after lint fixes.",
+      "Ready for release tag."
+    ]
+  }
+]
