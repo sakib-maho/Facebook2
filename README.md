@@ -1,4 +1,4 @@
-# Social Messaging UI (Facebook2 Upgraded)
+# Social Messaging UI
 
 <!-- BrandCloud:readme-standard -->
 [![Maintained](https://img.shields.io/badge/Maintained-yes-brightgreen.svg)](#)
