@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Social Messaging UI</title>
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <main class="container">
-    <section class="sidebar">
-      <h1>Chats</h1>
-      <input id="searchInput" type="search" placeholder="Search contact">
-      <ul id="contactList"></ul>
-    </section>
-    <section class="chat">
-      <h2 id="chatTitle">Select a contact</h2>
-      <div id="messageList" class="messages"></div>
-    </section>
-  </main>
+  <div class="app">
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <h1>Messages</h1>
+        <input id="searchInput" type="search" placeholder="Search contacts…" aria-label="Search contacts" />
+      </header>
+      <ul id="contactList" class="contact-list"></ul>
+    </aside>
+
+    <main class="chat-panel">
+      <header class="chat-header">
+        <div>
+          <h2 id="chatTitle">Select a contact</h2>
+          <p id="chatStatus" class="muted">—</p>
+        </div>
+        <button id="clearChatBtn" class="ghost" type="button" title="Clear local messages">Clear</button>
+      </header>
+
+      <section id="messageList" class="message-list" aria-live="polite"></section>
+
+      <form id="composer" class="composer">
+        <input id="messageInput" type="text" placeholder="Type a message…" autocomplete="off" required disabled />
+        <button id="sendBtn" type="submit" disabled>Send</button>
+      </form>
+    </main>
+  </div>
 
   <template id="contactTemplate">
-    <li class="contact-item"></li>
+    <li>
+      <button type="button" class="contact-item">
+        <span class="avatar"></span>
+        <span class="contact-meta">
+          <span class="contact-name"></span>
+          <span class="contact-preview muted"></span>
+        </span>
+        <span class="badge" hidden>0</span>
+      </button>
+    </li>
   </template>
 
   <template id="messageTemplate">
-    <div class="message"></div>
+    <article class="message-row">
+      <div class="bubble">
+        <p class="message-text"></p>
+        <time class="message-time muted"></time>
+      </div>
+    </article>
   </template>
 
-  <script src="assets/app.js"></script>
+  <script src="assets/app.js" type="module"></script>
 </body>
 </html>

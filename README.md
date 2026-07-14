@@ -1,25 +1,17 @@
 # Social Messaging UI
 
-<!-- BrandCloud:readme-standard -->
-[![Maintained](https://img.shields.io/badge/Maintained-yes-brightgreen.svg)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Showcase](https://img.shields.io/badge/Portfolio-Showcase-blue.svg)](#)
-
-_Part of the `sakib-maho` project showcase series with consistent documentation and quality standards._
-
-This repository now contains a social messaging interface clone built with vanilla web technologies.
-It includes searchable contacts, chat rendering, and data schema tests.
+Vanilla JavaScript messaging app with searchable contacts, threaded chat, local persistence, and simulated replies.
 
 ## Features
 
-- Search contacts by name
-- Select a contact to load chat messages
-- JSON-driven chat dataset
-- Responsive two-panel layout
-- Schema test for chat data
-- Legacy archive preserved in `legacy/archives/`
+- Contact search and unread badges
+- Send messages with timestamps
+- Draft persistence per conversation (`localStorage`)
+- Auto-replies for demo conversations
+- Reset to seed data
+- Schema + source tests
 
-## Quick Start
+## Quick start
 
 ```bash
 python3 -m http.server 8000
@@ -33,6 +25,11 @@ Open `http://localhost:8000`.
 python3 -m unittest discover -s tests -p "test_*.py"
 ```
 
+## Tech
+
+- HTML / CSS / JavaScript (ES modules)
+- JSON seed data + browser storage
+
 ## License
 
-MIT License. See `LICENSE`.
+MIT

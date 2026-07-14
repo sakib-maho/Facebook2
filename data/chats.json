@@ -1,26 +1,42 @@
 [
   {
-    "id": 1,
-    "name": "Ava",
+    "id": "c1",
+    "name": "Amina Rahman",
+    "online": true,
+    "unread": 2,
     "messages": [
-      "Can you review the API PR?",
-      "I added tests and updated the README."
+      {"text": "Hey Sakib, are you free for a quick sync?", "from": "them", "at": "2026-07-14T01:10:00.000Z"},
+      {"text": "Yes — give me 10 minutes.", "from": "me", "at": "2026-07-14T01:12:00.000Z"},
+      {"text": "Perfect. I'll send the agenda.", "from": "them", "at": "2026-07-14T01:13:00.000Z"}
     ]
   },
   {
-    "id": 2,
-    "name": "Noah",
+    "id": "c2",
+    "name": "Kenji Sato",
+    "online": false,
+    "unread": 0,
     "messages": [
-      "Frontend cards are now responsive.",
-      "Need feedback on spacing and typography."
+      {"text": "PR looks good. One comment on error handling.", "from": "them", "at": "2026-07-13T09:00:00.000Z"},
+      {"text": "Thanks — I'll update the retry logic.", "from": "me", "at": "2026-07-13T09:20:00.000Z"}
     ]
   },
   {
-    "id": 3,
-    "name": "Mina",
+    "id": "c3",
+    "name": "Maria Lopez",
+    "online": true,
+    "unread": 1,
     "messages": [
-      "CI is green after lint fixes.",
-      "Ready for release tag."
+      {"text": "Can you share the camera demo repo?", "from": "them", "at": "2026-07-14T02:00:00.000Z"}
+    ]
+  },
+  {
+    "id": "c4",
+    "name": "Omar Hassan",
+    "online": false,
+    "unread": 0,
+    "messages": [
+      {"text": "Deploy succeeded on staging.", "from": "them", "at": "2026-07-12T16:40:00.000Z"},
+      {"text": "Nice. I'll run the smoke tests.", "from": "me", "at": "2026-07-12T16:55:00.000Z"}
     ]
   }
 ]
